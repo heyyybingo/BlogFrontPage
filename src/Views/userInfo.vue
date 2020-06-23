@@ -40,6 +40,7 @@
 
 <script type="text/ecmascript-6">
 import setPicUrl from "../lib/js/setPicUrl";
+import myavatar from "../lib/image/avatar.jpg";
 export default {
   name: "",
   data() {
@@ -47,7 +48,7 @@ export default {
       user: {},
 
       progress: null,
-      imageUrl: require("../lib/image/avatar.jpg"),
+      imageUrl: myavatar,
       editable: false,
       rules: {
         password: [
