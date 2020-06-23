@@ -51,10 +51,10 @@ module.exports = {
         host: "0.0.0.0",
         hot: true,
         proxy: {
-            '/api': {
+            'blog/api': {
                 target: 'http://localhost:3002',
                 pathRewrite: {
-                    '/api': ''
+                    'blog/api': ''
                 }
             }
         }

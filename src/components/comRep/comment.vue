@@ -7,7 +7,7 @@
         <img
           width="100%"
           height="100%"
-          :src="comment.user.avatar?avatarURL(comment.user.avatar):null"
+          :src="comment.user.avatar?avatarURL(comment.user.avatar):avatar"
         />
       </div>
       <div class="comment-main">
@@ -66,7 +66,7 @@ export default {
   inject: ["loadComment"],
   props: ["comment", "commentIndex", "boardId"],
   data() {
-    return {};
+    return { avatar: "/src/lib/image/avatar.jpg" };
   },
   components: { reply },
   methods: {

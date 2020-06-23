@@ -2,7 +2,7 @@
   <div class="logo-container">
     <i class="iconfont icon-liebiao"></i>
     <div>
-      <img src="src/lib/image/logo.jpg" height="80%" />
+      <img src="/src/lib/image/logo.jpg" height="80%" />
       <p>heyyybingo</p>
     </div>
     <i class="iconfont icon-sousuo"></i>
