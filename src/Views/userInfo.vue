@@ -7,7 +7,7 @@
       <el-col :xs="22" :sm="20" :md="20" :lg="20" :xl="20" class="main">
         <div class="userInfo">
           <div class="avatar">
-            <img :src="imageUrl?imgaeUrl:avatar" height="100%" width="100%" />
+            <img :src="imageUrl" height="100%" width="100%" />
           </div>
           <el-form ref="updateUser" :model="user" :rules="rules" label-width="80px">
             <form style="margin:0 0 20px 80px;" ref="uploadAvatar">
@@ -48,8 +48,7 @@ export default {
       user: {},
 
       progress: null,
-      imageUrl: null,
-      avatar: myavatar,
+      imageUrl: myavatar,
       editable: false,
       rules: {
         password: [
@@ -85,7 +84,7 @@ export default {
     onSubmit() {
       this.$refs["updateUser"].validate(valid => {
         if (valid) {
-          if (this.imageUrl != this.user.avatar) {
+          if (this.imageUrl != this.user.avatar || this.imageUrl != imageUrl) {
             this.UploadAndSub();
           } else {
             this.InstantSub();
