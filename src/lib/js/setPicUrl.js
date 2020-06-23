@@ -1,5 +1,5 @@
 function setPicUrl(url) {
-    return "/api/" + url;
+    return "/blog/api/" + url;
 }
 
 export default setPicUrl

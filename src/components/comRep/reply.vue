@@ -53,13 +53,14 @@
 <script type="text/ecmascript-6">
 import moment from "moment";
 import setPicUrl from "../../lib/js/setPicUrl";
+import myavatar from "../../lib/image/avatar.jpg";
 export default {
   name: "",
   inject: ["loadComment"],
   props: ["reply", "replyIndex", "_id"],
   data() {
     return {
-      avatar: "/src/lib/image/avatar.jpg"
+      avatar: myavatar
     };
   },
   components: {},

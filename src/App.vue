@@ -33,7 +33,7 @@ body,
 html {
   width: 100%;
   height: 100%;
-  background: url("/src/lib/image/bgc1.gif") center;
+  background: url("./lib/image/bgc1.gif") center;
 }
 .container {
   height: 100%;

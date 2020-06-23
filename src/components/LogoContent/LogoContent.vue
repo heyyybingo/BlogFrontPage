@@ -2,7 +2,7 @@
   <div class="logo-container">
     <i class="iconfont icon-liebiao"></i>
     <div>
-      <img src="/src/lib/image/logo.jpg" height="80%" />
+      <img :src="logo" height="80%" />
       <p>heyyybingo</p>
     </div>
     <i class="iconfont icon-sousuo"></i>
@@ -10,10 +10,13 @@
 </template>
 
 <script type="text/ecmascript-6">
+import mylogo from "../../lib/image/logo.jpg";
 export default {
   name: "",
   data() {
-    return {};
+    return {
+      logo: mylogo
+    };
   },
   components: {},
   methods: {}

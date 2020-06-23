@@ -61,12 +61,13 @@ import reply from "./reply.vue";
 import moment from "moment";
 import setPicUrl from "../../lib/js/setPicUrl";
 import roles from "../../lib/js/roles";
+import myavatar from "../../lib/image/avatar.jpg";
 export default {
   name: "",
   inject: ["loadComment"],
   props: ["comment", "commentIndex", "boardId"],
   data() {
-    return { avatar: "/src/lib/image/avatar.jpg" };
+    return { avatar: myavatar };
   },
   components: { reply },
   methods: {

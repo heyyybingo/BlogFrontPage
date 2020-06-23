@@ -6,7 +6,8 @@ module.exports = {
     entry: __dirname + "/src/app.js",
     output: {
         path: __dirname + "/dist",
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+
     },
     module: {
         rules: [{
@@ -35,8 +36,10 @@ module.exports = {
                 use: [{
                     loader: 'url-loader',
                     options: {
-                        limit: 10000,
-                        name: 'src/lib/image/[name].[ext]'
+                        limit: 100,
+                        name: 'src/lib/image/[name].[ext]',
+
+
                     }
                 }],
 
@@ -51,10 +54,10 @@ module.exports = {
         host: "0.0.0.0",
         hot: true,
         proxy: {
-            'blog/api': {
+            '/blog/api': {
                 target: 'http://localhost:3002',
                 pathRewrite: {
-                    'blog/api': ''
+                    '/blog/api': ''
                 }
             }
         }

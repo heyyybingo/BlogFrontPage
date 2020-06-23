@@ -47,7 +47,7 @@ export default {
       user: {},
 
       progress: null,
-      imageUrl: "/src/lib/image/avatar.jpg",
+      imageUrl: require("../lib/image/avatar.jpg"),
       editable: false,
       rules: {
         password: [
